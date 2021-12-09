@@ -12,6 +12,7 @@ public class Polindrom {
         //przepisanie do char tabeli
         char[] table = new char[this.tekst.length()];
         for (int i = 0; i < this.tekst.length(); i++) {
+
             table[i] = this.tekst.charAt(i);
         }
 
