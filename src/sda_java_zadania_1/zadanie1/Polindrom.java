@@ -1,9 +1,9 @@
-package sda_java_zadania_1;
+package sda_java_zadania_1.zadanie1;
 
-public class Zadanie1Polindrom {
+public class Polindrom {
     String tekst;
 
-    public Zadanie1Polindrom(String wejscie){
+    public Polindrom(String wejscie){
         tekst = wejscie;
     }
 
