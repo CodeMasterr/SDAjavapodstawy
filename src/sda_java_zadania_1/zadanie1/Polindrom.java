@@ -7,8 +7,7 @@ public class Polindrom {
         tekst = wejscie;
     }
 
-    public void CzyPolindrom() {
-        boolean znaleziono = false;
+    public boolean czyPolindrom() {
         //przepisanie do char tabeli
         char[] table = new char[this.tekst.length()];
         for (int i = 0; i < this.tekst.length(); i++) {
@@ -16,20 +15,13 @@ public class Polindrom {
             table[i] = this.tekst.charAt(i);
         }
 
-        for (int i=0 ; (i < this.tekst.length()/2) &&!znaleziono; i++)
+        for (int i=0 ; i < this.tekst.length()/2; i++)
         {
-            if (table[i] == table[(table.length-1)-i])
+            if (table[i] != table[(table.length-1)-i])
             {
-                znaleziono = false;
-            }
-            else
-            {
-                znaleziono = true;
-                System.out.println("Podany ciag nie jest polindromem");
+                return false;
             }
         }
-        if(!znaleziono){
-            System.out.println("Podany ciag jest polindromem");
-        }
+        return true;
     }
 }

@@ -12,8 +12,8 @@ public class PolindromMain {
         System.out.println("Podaj ciag znakow, aby sprawdzic czy jest polindromem");
         tekst = scan.nextLine();
         Polindrom polindrom = new Polindrom(tekst.replaceAll(" ", ""));
-        System.out.println(polindrom.tekst);
-        polindrom.CzyPolindrom();
+        System.out.println(polindrom.czyPolindrom());
+
     }
 
 }
