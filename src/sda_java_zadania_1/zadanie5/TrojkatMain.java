@@ -13,6 +13,12 @@ public class TrojkatMain {
         System.out.println("Podaj 3 bok");
         c = scan.nextInt();
         Trojkat trojkat = new Trojkat(a,b,c);
-        trojkat.CzyProstokatny();
+        if(trojkat.CzyProstokatny()){
+            System.out.println("Trojkat jest prostokatny");
+        }
+        else
+        {
+            System.out.println("Trojkat nie jest prostokatny");
+        }
     }
 }

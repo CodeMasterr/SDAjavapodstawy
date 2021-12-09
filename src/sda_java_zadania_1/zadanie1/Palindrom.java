@@ -1,9 +1,9 @@
 package sda_java_zadania_1.zadanie1;
 
-public class Polindrom {
+public class Palindrom {
     String tekst;
 
-    public Polindrom(String wejscie){
+    public Palindrom(String wejscie){
         tekst = wejscie;
     }
 

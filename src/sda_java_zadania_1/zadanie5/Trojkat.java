@@ -10,7 +10,19 @@ public class Trojkat {
         this.b = b;
         this.c = c;
     }
-    public void CzyProstokatny(){
+
+    public boolean CzyProstokatny(){
+        if(b*b+c*c==a*a || a*a+c*c==b*b || b*b+a*a==c*c)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public void CzyProstokatnyTemp(){
         if(a+b>c&&b+c>a&c+a>b){
             if (a>b){
                 if (a>c){//a najdluzszy

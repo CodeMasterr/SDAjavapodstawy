@@ -2,7 +2,7 @@ package sda_java_zadania_1.zadanie1;
 
 import java.util.Scanner;
 
-public class PolindromMain {
+public class PalindromMain {
     //Zadanie1
     //Napisz program, który sprawdza czy ciąg znaków jest palindromem.
     public static void main(String[] args) {
@@ -11,9 +11,16 @@ public class PolindromMain {
         Scanner scan = new Scanner(System.in);
         System.out.println("Podaj ciag znakow, aby sprawdzic czy jest polindromem");
         tekst = scan.nextLine();
-        Polindrom polindrom = new Polindrom(tekst.replaceAll(" ", ""));
-        System.out.println(polindrom.czyPolindrom());
+        Palindrom palindrom = new Palindrom(tekst.replaceAll(" ", ""));
+        System.out.println(palindrom.czyPolindrom());
 
+        if(palindrom.czyPolindrom()){
+            System.out.println("Ciag jest palindromem");
+        }
+        else
+        {
+            System.out.println("Ciag nie jest palindromem");
+        }
     }
 
 }
