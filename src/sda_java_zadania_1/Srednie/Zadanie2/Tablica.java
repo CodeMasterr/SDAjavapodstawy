@@ -6,7 +6,7 @@ public class Tablica {
     int[][] tablica = new int[3][3];
     int suma=0;
 
-    public Tablica Losuj() {
+    public Tablica losuj() {
         int liczba;
         int min = 10;
         int max = 99;
@@ -22,7 +22,7 @@ public class Tablica {
     }
 
     public Tablica(){
-        this.Losuj();
+        this.losuj();
     }
 
     public void wyswietl() {
