@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TrojkatMain {
     public static void main(String[] args) {
-        int a,b,c;
+        int a, b, c;
         Scanner scan = new Scanner(System.in);
         System.out.println("Sprawdz czy trojkat jest prostokatny, podaj 1 bok");
         a = scan.nextInt();
@@ -12,12 +12,10 @@ public class TrojkatMain {
         b = scan.nextInt();
         System.out.println("Podaj 3 bok");
         c = scan.nextInt();
-        Trojkat trojkat = new Trojkat(a,b,c);
-        if(trojkat.CzyProstokatny()){
+        Trojkat trojkat = new Trojkat(a, b, c);
+        if (trojkat.czyProstokatny()) {
             System.out.println("Trojkat jest prostokatny");
-        }
-        else
-        {
+        } else {
             System.out.println("Trojkat nie jest prostokatny");
         }
     }
