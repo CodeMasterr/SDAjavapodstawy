@@ -1,4 +1,4 @@
-package sda_java_zadania_1.zadanie5;
+package sda_java_zadania_1.Podstawowe.zadanie5;
 
 public class Trojkat {
     int a;
