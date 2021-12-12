@@ -42,12 +42,6 @@ public class Tablica {
             }
         }
 
-        for (int i = 0; i < temp.length; i++) {
-            System.out.print(temp[i] + " ");
-        }
-        System.out.println();
-
-
         return topPos;
     }
 
