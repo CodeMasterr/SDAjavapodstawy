@@ -1,6 +1,6 @@
 package JavaZaawansowana.dzien1;
 
-public class Cat extends Animal implements Flying<Dog>{
+public class Cat extends Animal implements Flying<Cat>{
 
     void mrucz(){
         System.out.println("Mrrrr");
@@ -16,8 +16,8 @@ public class Cat extends Animal implements Flying<Dog>{
     }
 
     @Override
-    public Dog raise() {
-        return new Dog();
+    public Cat raise() {
+        return new Cat();
     }
 
     @Override

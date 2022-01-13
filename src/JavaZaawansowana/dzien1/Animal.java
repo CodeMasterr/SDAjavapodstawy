@@ -7,6 +7,9 @@ public abstract class Animal {
     void run(){
         System.out.println("Biegne");
     }
+
+    public abstract Cat raise();
+
     abstract void eat();
 
     abstract void drink();

@@ -15,15 +15,10 @@ public class Main {
         Cat.Wisker wisker = new Cat.Wisker();
         System.out.println(wisker.length);
 
-        Animal rabbit = new Animal() {
+       /* Animal rabbit = new Animal() {
             @Override
             public Cat raise() {
                 return new Cat();
-            }
-
-            @Override
-            public void land() {
-
             }
 
             @Override
@@ -38,7 +33,7 @@ public class Main {
         };
         rabbit.eat();
         rabbit.drink();
-
+*/
         Flying  flyingCat = new Cat();
 
     }
